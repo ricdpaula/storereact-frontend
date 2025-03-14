@@ -2,8 +2,9 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom";
 
+
 const CheckoutItems = ({_id, image, name, price}) => {
-    const cart= localStorage.getItem("cart") || "{}";
+    const cart = localStorage.getItem("cart") || "{}";
     const cartArray = JSON.parse(cart);
 
     const deleteItem = () => {
