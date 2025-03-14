@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.banner{
+    background-image: url("assets/img//banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.alert{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    animation: alert .4s linear forwards;
+}
+
+.product-card__img:hover{
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+.categories__types:hover{
+    transition: .4s;
+    color: oklch(0.546 0.245 262.881);
+}
+
+@keyframes alert {
+    0%{opacity: 0; right: 100px}
+    100%{opacity: 1; right: 0px}
+}
+
+@media only screen and (max-width: 1024px){
+    .checkout-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+}
