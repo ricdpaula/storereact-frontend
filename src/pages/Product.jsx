@@ -84,7 +84,7 @@ const Product = () => {
         <div className="product flex flex-col justify-center items-center m-8">
             <div className="product__container flex flex-col lg:flex-row justify-center items-center p-6 bg-white w-3/4 h-fit">
                 <div className="flex flex-col w-full p-8">
-                    <div onClick={imageFull} className="product__img h-80 w-full mx-8" style={{ "backgroundImage": `url(${currentImage})`, "backgroundSize": "contain", "backgroundPosition": "center", "backgroundRepeat": "no-repeat" }}></div>
+                    <div onClick={imageFull} className="product__img h-80 w-full mx-8 self-center" style={{ "backgroundImage": `url(${currentImage})`, "backgroundSize": "contain", "backgroundPosition": "center", "backgroundRepeat": "no-repeat" }}></div>
                     <div className="flex flex-row flex-wrap justify-center items-center mt-6">
                         {productObj.subImages.map((current, index) => <div className="w-12 h-12 mx-2" onClick={() => setCurrentImage(current)} key={`${productObj.sku}-${index}`} style={{ "backgroundImage": `url(${current})`, "backgroundSize": "contain", "backgroundPosition": "center", "backgroundRepeat": "no-repeat" }}></div>)}
                     </div>
