@@ -6,4 +6,4 @@
   <li>Express</li>
   <li>Axios</li>
 </ul>
-<b>Demo:</b> <a href="https://storereact-frontend-ricdpaula.vercel.app/">StoreReact</a>
+<b>Demo:</b> <a href="https://storereact-frontend-ricdpaula.vercel.app/" target="_blank">StoreReact</a>
